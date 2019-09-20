@@ -17,11 +17,13 @@ public:
 
 	virtual ~ListaLibros();
 
-	void insertarInicio(const Libro& _libro);
+
 	void insertarFinal(const Libro& _libro);
-	bool eliminarInicio();
-	int totalNodos();
-	bool listaVacia();
+	bool eliminarFinal();
+	bool  encontrarlib(std::string id);
+	std::string obtenerLibr(std::string id);
+	
+
 
 	Nodo* getPrimero() const;
 
